@@ -11,4 +11,12 @@ $(document).on("turbolinks:load", function() {
     // clear text field
     $input.val('');
   });
+
+  $(".message").click("a", function(event) {
+    console.log("deleting", this);
+    event.preventDefault();
+    messageId = $(this).data('message-id');
+    App.messages.delete(messageId);
+  });
+
 });

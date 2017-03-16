@@ -20,6 +20,12 @@ class MessagesChannel < ApplicationCable::Channel
     end
   end
 
+  def destroy(data)
+    @message = Message.find(data['messageId'])
+    @message.destroy
+    ActionCable.server.broadcast("chat", {action: 'delete', messageId: @message.id})
+  end
+
   private
     def render_message(message)
       ApplicationController.render(partial: 'messages/message', locals: {message: message})
