@@ -1,5 +1,14 @@
-<div class="container">
+<div class="ui container">
   <h1>Messages</h1>
+
+  <%= form_for Message.new do |f| %>
+    <div class="ui large form">
+      <div class="field">
+        <%= f.text_field :body, placeholder: 'Enter your message' %>
+      </div>
+    </div>
+  <% end %>
+
   <div class="messages">
     <%= render @messages %>
   </div>
