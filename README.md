@@ -100,7 +100,7 @@ Add HTTP style label to the old form. You'll have something like this:
 
 ![](https://dl.dropboxusercontent.com/spa/vkwvskbavc27sn4/tbetw04q.png)
 
-- [ ] In `app/assets/javascripts/messages.coffee` add a method to catch the form submit event:
+- [x] In `app/assets/javascripts/messages.coffee` add a method to catch the form submit event:
 
   ```coffee
   $(document).on "turbolinks:load", ->
@@ -119,7 +119,7 @@ Add HTTP style label to the old form. You'll have something like this:
 
 NOTE: in Lecture 5, we used observe the `keyup` event and submit data if an Enter is found. In this lab, we just used a different way: intercepting HTML form.
 
-- [ ] Now make MessagesChannel handle the saved data:
+- [x] Now make MessagesChannel handle the saved data:
 
   ```ruby
   def receive(data)
