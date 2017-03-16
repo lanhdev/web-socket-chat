@@ -9,7 +9,10 @@ class MessagesChannel < ApplicationCable::Channel
 
   def receive(data)
     Rails.logger.info("MessagesChannel got:#{data.inspect}")
+  end
 
+  def create(data)
+    # data here is hash {message: data} in javascripts/channels/messages.js
     # note: data[:message] will not work. use string as hash keys here
     @message = Message.create(data['message'])
     if @message.persisted?
