@@ -4,10 +4,10 @@
 
 ### Milestone 1: a project from scratch that displays chat messages.
 
-- [ ] Set up a new rails project named `lab5` using PostgreSQL. Git init, git commit and git push to your pair's repo.
-- [ ] Generate a `Message` resource with a `body` string column. Add validation. Implement `/messages` to display all messages (newest first).
-- [ ] Set up root path to `HomeController#index`. Inside it, redirect visitors to `messages_path`.
-- [ ] On `/messages`, refactor the view to use `render @messages` and implement `_message.html.erb` partial. Your generated HTML should look like this:
+- [x] Set up a new rails project named `lab5` using PostgreSQL. Git init, git commit and git push to your pair's repo.
+- [x] Generate a `Message` resource with a `body` string column. Add validation. Implement `/messages` to display all messages (newest first).
+- [x] Set up root path to `HomeController#index`. Inside it, redirect visitors to `messages_path`.
+- [x] On `/messages`, refactor the view to use `render @messages` and implement `_message.html.erb` partial. Your generated HTML should look like this:
 
   ```erb
   <div class="messages">
@@ -17,7 +17,7 @@
   </div>
   ```
 
-- [ ] Create a few new messages from `rails console` and check your view.
+- [x] Create a few new messages from `rails console` and check your view.
 
 ### Milestone 2: support submitting new chat messages.
 
@@ -193,27 +193,4 @@ Verify:
 
 ### Bonus Milestone 8: implement multiple chat rooms.
 
-If you got here, you are good enough to write your own checkboxes :)# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you got here, you are good enough to write your own checkboxes :)
